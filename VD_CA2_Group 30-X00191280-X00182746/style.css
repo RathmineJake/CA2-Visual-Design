@@ -1,0 +1,392 @@
+body {
+    /*Style by X00191280(Jake Walsh)*/
+    background-image: url("./img/topography.svg"), linear-gradient(45deg, #800080, #df99df, #3b38f3, #74aaf0, #00ff00, #13E2DA);
+    /*45 degree gradiant with with 6 colours in it*/
+    height: 100%;
+    /*Uses up 100 percent of the browser This uses full hieght dependent on content the gradiant will be cut off*/
+    min-height: 100vh;
+    /*Min height of the height of the invisable and visable height, This fixes the above mentioned problem*/
+    font-family: Courier, monospace;
+    margin: 0;
+    /*Gets rid of the extra space around of nav*/
+}
+
+nav a:visited {
+    color: black;
+    /*If you open this in live server it says that youve visted them */
+    text-shadow: -2px -2px 2px blue;
+}
+
+nav a:hover {
+    color: blue;
+    /*This will change the the color of the link that you are on*/
+    text-shadow: -2px -2px 2px black;
+}
+
+nav a:active {
+    color: cyan;
+    /*These will be the focus colors for links going forward - jake*/
+    text-shadow: -2px -2px 2px blue;
+}
+
+nav a.current {
+    color: blue;
+    /*This will change the the color of the link that you are on*/
+    text-shadow: -2px -2px 2px black;
+}
+
+nav {
+    display: flex;
+    max-width: 80rem;
+    /*Going with rem over % since it become slightly bigger which is uglier, this should be slightly bigger than the nav but not the full width of page DON'T CHANGE*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    /*Spaced empty area between nav and mainContainer*/
+    text-align: center;
+    /*list-style-type: none;margin: 0; doesn't work within this section of code */
+    border: 0.2rem;
+    /*If you make this any bigger using a whole number its doesnt really become a borderline but a black box that surrounds our blue nav bar*/
+    border-style: solid;
+    /*type of border you want dotted which would have slight gaps rounded with rounded corners etc*/
+    padding-top: 1rem;
+    /*spacing between the top and content of the nav*/
+    padding-bottom: 1rem;
+    /*spacing between the bottom and content of the nav*/
+    background-color: rgb(143, 201, 255);
+    /*This will display if background image isnt availble*/
+    max-height: 2em;
+    box-shadow: -0.3em 0.3em 2em rgb(120, 236, 236);
+}
+
+nav ul {
+    list-style-type: none;
+    /*Takes away the list style which was o circles doesnt replace them with anything*/
+    margin: 0;
+    display: inline;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-bottom-style: solid;
+}
+
+section {
+    /* Helps layer the contents on separate line in main container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mainContainer {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*Children are block's unless displayed differently*/
+    border-radius: 2%;
+    border-style: solid;
+    background-color: #fff;
+    /*Remove this and the background will become the same as the body*/
+    box-shadow: -0.3em 0.3em 1em rgb(120, 236, 236);
+    overflow: hidden;
+    /*This is mainly being used for those that mess around with the shape of the forms in the questionaire*/
+    padding: 2em;
+}
+
+.content {
+    /*1. this is being called content because i may need to refrence a container in similar css and id like a little differeniate between the two, second it will be primarly text without imgs*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2%;
+    /*Rounded borders because we are that good*/
+    padding: 1em;
+    /*This is adjusted the content inside*/
+    border: 0.2rem none;
+    margin: 1rem;
+    max-width: 40em;
+    background-color: gray;
+    box-shadow: -0.1rem 0.1rem#000;
+}
+
+.content-2 {
+    /* 2. As i did not want flex property in the content-2 */
+    border-radius: 15%;
+    padding: 1em;
+    border: 0.2rem none;
+    margin: 1em;
+    background-color: gray;
+    box-shadow: -0.1rem 0.1rem#000;
+    min-width: 10em;
+    max-width: 24em;
+}
+
+.content-2 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.content-2 a:hover {
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+.content-3 {
+    /*This will be hidden until the site is sortened down*/
+    visibility: hidden;
+    display: inline;
+    height: 0;
+}
+
+.content-4 {
+    /* For HTML page as it conflicted with our idea on CSS page with content-2 being invisible */
+    border-radius: 15%;
+    padding: 1em;
+    border: 0.2rem none;
+    margin: 1em;
+    background-color: gray;
+    box-shadow: -0.1rem 0.1rem#000;
+    min-width: 10em;
+    max-width: 24em;
+}
+
+.content-4 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.content-4 a:hover {
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+.sizeable-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 10em;
+    width: 25em;
+    /* max-width: 24em;
+    max-height: 3em; */
+    height: 3em;
+    border-radius: 0.2rem;
+    transition: all 2s;
+    /*This changes it to grays within 2 seconds*/
+    text-align: center;
+    overflow: hidden;
+    background-color: #c0c0c0;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 1em;
+}
+
+.sizeable-content:hover {
+    /*Become this after 2 seconds of being hovered*/
+    min-height: 10em;
+    /* max-height: 24em; */
+    height: 43em;
+    min-width: 10em;
+    max-width: 40%;
+    background-color: gray;
+    text-align: center;
+    box-shadow: -0.1rem 0.1rem#000;
+}
+
+.sizeable-content:hover.content-height-1 {
+    height: 42em;
+    /*Custom heights on team bios, Matthew's height*/
+}
+
+.sizeable-content:hover.content-height-2 {
+    height: 32em;
+    /*Jake's content*/
+}
+
+#content-text p {
+    width: 90%;
+    margin: auto;
+}
+
+.h2med {
+    font-size: medium;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.row {
+    width: 100%;
+    /*width of content area,*/
+    display: flex;
+    /*Flex used to allow containers/row to have adjustble sizing*/
+    flex-direction: row;
+    /*default direction of flex content going from left to right --> */
+    flex-wrap: nowrap;
+    /* aligns everything on the same axis*/
+    justify-content: center;
+    /* aligns items within row along the x axis */
+    align-items: center;
+    /*Holds items within row*/
+}
+
+footer {
+    max-width: 80rem;
+    /*Going with rem over % since it become slightly bigger which is uglier, this should be slightly bigger than the nav but not the full width of page DON'T CHANGE*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    /*Spaced empty area between footer and mainContainer*/
+    text-align: center;
+    border: 2%;
+    /*If you make this any bigger using a whole number its doesnt really become a borderline but a black box that surrounds our blue nav bar*/
+    border-style: solid;
+    /*type of border you want dotted which would have slight gaps rounded with rounded corners etc*/
+    padding-top: 1rem;
+    /*spacing between the top and content of the nav*/
+    padding-bottom: 1rem;
+    /*spacing between the bottom and content of the nav*/
+    background-color: rgb(143, 201, 255);
+    box-shadow: -0.3em 0.3em 2em rgb(120, 236, 236);
+}
+
+img {
+    width: 10rem;
+    /*Need to center image in index*/
+    border-radius: 0.5em;
+}
+
+img:hover.link {
+    /*This is displayed on the page that is in use*/
+    transform: scale(1.05);
+    /*Image increases by * .05 dimentions */
+}
+
+img.profile {
+    /*This make it have rounded corners currently only used for the teams page*/
+    border-radius: 2rem;
+    border-style: solid;
+    /*Fix this messes with index page*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Centers image within content default postion is left*/
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    color: inherit;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(143, 201, 255)
+}
+
+#logo {
+    width: 5em;
+    height: auto;
+}
+
+#mainpics {
+    width: unset;
+    /* Gets rid of the orginal content */
+}
+
+#list_type {
+    list-style-type: none;
+    padding-right: 13rem;
+}
+
+@media only screen and (max-width: 700px) {
+    /*Once the website is under 700px these conditions below will display,similar to have a secondary website within the first html*/
+    body{
+        background-image: none;
+    }
+    footer {
+        border-style: none;
+        background-color: gray;
+        box-shadow: 0em 0em 0em;
+    }
+    nav {
+        background-color: gray;
+        /*This will display if background image isnt availble*/
+        background-image: url();
+        box-shadow: 0em 0em 0em;
+        border-style: none;
+    }
+    nav ul {
+        border-style: none;
+    }
+    .mainContainer {
+        border-style: none;
+        background-color: gray;
+        border-radius: 0rem;
+        box-shadow: 0em 0em 0em black;
+        /*Even tho the colour is there its hidden benath the maincontainer so it can't be seen(I want to use this as an example to show the difference between displaying clear borders and without them)*/
+    }
+    .content {
+        border-style: none;
+        box-shadow: 0em 0em 0em;
+        background-color: white;
+    }
+    .content-2 {
+        visibility: hidden;
+        display: inline;
+        height: 0;
+    }
+    .content-3 {
+        visibility: visible;
+        text-align: center;
+        justify-content: center;
+        /*This is adjusted the content inside*/
+        height: auto;
+        margin-bottom: -3rem;
+        margin: 0;
+    }
+    .content-4 {
+        background-color: white;
+        box-shadow: 0em 0em 0em;
+    }
+    .sizeable-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 80vw;
+        width: 100%;
+        border-radius: 0.2rem;
+        transition: all 2s;
+        /*This changes it to grays within 2 seconds*/
+        text-align: center;
+        overflow: hidden;
+        background-color: #c0c0c0;
+        margin-bottom: 1em;
+    }
+    .sizeable-content:hover {
+        /*Become this after 2 seconds of being hovered*/
+        min-width: 80vw;
+        background-color: gray;
+        text-align: center;
+        /* box-shadow: -0.1rem 0.1rem#000; */
+    }
+    .sizeable-content:hover.content-height-1 {
+        height: 46em;
+    }
+    .sizeable-content:hover.content-height-2 {
+        height: 36em;
+    }
+    #mainpics {
+        width: 25em;
+    }
+    #randomcolorA {
+        color: cornflowerblue;
+    }
+    #randomcolorB {
+        color: gold;
+        background-color: gray;
+    }
+    #list_type {
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}

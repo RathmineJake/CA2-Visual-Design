@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Information About HTML</title>
+</head>
+    <nav>
+        <h1>Group 30</h1>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="team-bio.html">Team Bio</a>
+            <a class="current" href="information_html.html">HTML</a>
+            <a href="information_css.html">CSS</a>
+            <a href="questionnaire.html">Questionnaire</a>
+            
+        </ul>
+        <img id="logo" src="img/DIT.jpg">
+    </nav>
+<body>
+    <div class="mainContainer"> <!--This page is used to explain what HTML is-->
+        <section>
+            <div class="row">
+                <div class="content">
+                    <img id="mainpics" src="img/html-example.jpg" alt="error">
+                        <h2>What is HTML?</h2>
+                        <div id="content-text">
+                            <p>Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications. A hypertext is a text that is used to reference other pieces of text, while a markup language is a series of markings that tells web servers the style and structure of a document.</p>
+                        </div>
+                </div>
+        </section>
+        
+        <section>
+            <div class="row">
+                <div class="content-4"> <!--Did not use content-2 as it casued issues with About CSS page with content-2 being invisible-->
+                    <h2>Principle of HTML Menu Design</h2>
+                    <ol>
+                        <a href="#menu1"><li>Respect HTML Semantics</li></a> <!--Has id named menu1 to link to a specific part of the page which has an id of menu1 in the element-->
+                        <a href="#menu2"><li>Presentational Markup</li></a>
+                        <a href="#menu3"><li>Keep your CSS external</li></a>
+                        <a href="#menu4"><li>Structure the Elements</li></a>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+            <section>
+                <div class="content-4">
+                    <h2 id="menu1">Respect HTML Semantics</h2> 
+                        <p>In HTML5 there are elements such as:</p>
+                        <ul>
+                            <li>Section</li>
+                            <li>Article</li>
+                            <li>Aside</li>
+                            <li>Nav</li>
+                        </ul>
+                        <p>which represents a new content model.</p>
+                        <p>Previously people used div to separate content in page but unlike other elements, div has no semantics.</p>
+                        <p>With semantic tags like aside, nav and footer - this piece is telling you that this piece is like another document isnide a document.</p>
+                </div>
+                <div class="content-4">
+                    <h2 id="menu2">Presentational Markup</h2>
+                        <p>Try and stay away from using presentational markup as it can make the HTML code look messy:</p>
+                            <ul>
+                                <li>using br element (break)</li>
+                                <li><i>using i element (italic)</i></li>
+                                <li><strong>using strong element (strong)</strong></li>
+                            </ul>
+                        <p>As useful as it can be, try and use CSS to style the text within the content if possible.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="content-4">
+                    <h2 id="menu3">Keep your CSS External</h2>
+                    <p>Having a CSS inline in the document can get confusing as it does not only muddy up the markup but it only applies to a single HTML page.</p>
+                    <p>Keeping CSS files separate means that future pages can be linked to them so designing mulitple pages becomes easier.</p>
+                </div>
+                <div class="content-4">
+                    <h2 id="menu4">Structure the Elements</h2>
+                    <p>I cannot stress this but if you don't structure or learn to structure you codes properly, you are going to have a hard time finding or understanding what your codes does in the HTML.</p>
+                    <p>With a messy structure, it'll give other developers a hard time to follow and debug it if needed.</p>
+                </div>    
+            </section>
+    </div>
+<footer>
+    <p>For more information or help please use the in college resources for furthur help: <a href = "https://www.tudublin.ie/connect/staff-directory/">TU Dublin</a></p>
+</footer>   
+</body>
+</html>

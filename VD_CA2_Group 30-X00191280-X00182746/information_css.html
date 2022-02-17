@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Information About CSS</title>
+</head>
+<nav>
+    <h1>Group 30</h1>
+    <ul>
+        <a href="index.html">Home</a>
+        <a href="team-bio.html">Team Bio</a>
+        <a href="information_html.html">HTML</a>
+        <a class="current" href="information_css.html">CSS</a>
+        <a href="questionnaire.html">Questionnaire</a>
+        
+    </ul>
+    <img id="logo" src="img/DIT.jpg">
+</nav>
+
+<body>
+    <div class="mainContainer"> <!--This page is used to explain what CSS is-->
+        <section>
+            <div class="row">
+                <div class="content">
+                    <img id="mainpics" src="img/css-logo.png" alt="error">
+                        <h2>
+                            What is CSS?
+                        </h2>
+                        <div id="content-text"> <!--Keeps the text in <p> in center with margin set to 0-->
+                        <p>CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users</p>
+                        </div>
+                </div>
+        </section>
+        
+        <section>
+            <div class="content-3" > <!--Content-3 appears when the website is shrinked to 700px-->
+                <h2>Principle of CSS Design Menu</h2>
+                <ol id="list_type">
+                    <li>Consistency</li>
+                    <li>Succinctness</li>
+                    <li>Spacing</li>
+                   <li>Mobile Friendly</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="content-2"> <!--Content-2 is visible until it gets shrinked 700px then it turns invisible--> 
+                    <h2>Principle of CSS Design Menu</h2>
+                    <ol>
+                        <a href="#menu1"><li>Consistency</li></a>
+                        <a href="#menu2"><li>Succinctness</li></a>
+                        <a href="#menu3"><li>Spacing</li></a>
+                        <a href="#menu4"><li>Mobile Friendly</li></a>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content-3">
+                <h2>Inconsistency</h2>
+                <p>The example of css styling is apperant when simple structures are taken away such as simply removing the box shadow and border color, makes it so that everything looks the same even if they within different containers</p>
+                <ul id="list_type">
+                    <li id="randomcolorA">Poor use of Color whether your using color to highlight important information or to divide areas the key aspect to is that it is must be constant in your use of Color</li>
+                    <li>The use of color should be considered with the other elements around your webpage, we've made the line above a much harder color to see with its background to show Inconsistency</li>
+                </ul>
+            </div>
+            <div class="content-3">
+                <h2>What determines the style and layout of a page?</h2>
+                    <p>Simply put it is the user who determines the the relative content studies show that we don't read webpages we scan them for what it is we are looking for</p>
+                    <p><strong>So simply making something stand out slightly will draw in your user's attention</strong></p>
+                    <p>An example of poor styling effecting other pages</p>
+                <img id="mainpics" src="img/styling.PNG">
+                <h2>Layout</h2>
+                    <p>You've got text align more to the right a highlight useless piece of information the flow of this layout is chatoic and something which should always be avoided</p>
+                    <p>Like we talked about before there are three constant question which you should always be referring back to</p>
+                <ul>
+                    <li>How many classes are needed to achieve the style?</li>
+                    <li>How long and complex are each of the classes?</li>
+                    <li>Are the class name easily understandable without context?</li>
+                </ul>
+            </div>
+            <div class="content-2">
+                <h2 id="menu1">Consistency</h2>
+                    <p>Choose your methodology or framework and stay consistent with your rules when coding the web layout of the CSS.</p>
+                    <p>With a poorly-designed system it will break down immediately.</p>
+                    <p>Pick you methodology and framework (or a lack of one), and when your confident in your choices, put your head down,get to work and be predictable and consistent.</p> 
+            </div>
+            <div class="content-2">
+                <h2 id="menu2">Succinctness</h2>
+                    <p>What does it mean? <br>To be brief <strong>and</strong> clear, in other words, keep it simple enough to understand.</p>
+                    <p>You don't want to write a complicated CSS system otherwise other developers will find it hard to follow it consistently and unaminously.</p>
+                    <p>When implementing styles in CSS, ask yourself the three questions.</p>
+                    <ul>
+                        <li>How many classes are needed to achieve the style?</li>
+                        <li>How long and complex are each of the classes?</li>
+                        <li>Are the class name easily understandable without context?</li>
+                    </ul>
+            </div>
+        </section>
+            
+        <section>
+            <div class="content-2">
+                 <h2 id="menu3">Visual Hierarchy</h2>
+                 <p>Visual Hierarchy is the arrangement of elements in order of importance.This can be done by:</p>
+                     <ul>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS"><li>Size</li></a>
+                        <a href="https://www.w3schools.com/css/css3_images.asp"><li>Imagery</li></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color"><li>Color</li></a>
+                        <a href="https://blog.hubspot.com/website/web-textures"><li>Texture</li></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><li>Style</li></a>
+                    </ul>
+                    <p>Color is the most important aspect of website design as bright colors can attract the reader to that specific part of the page where the content is situated.</p>
+            </div>
+            <div class="content-2">
+                <h2 id="menu4">Mobile Friendly</h2>
+                <p>With many people using their, it is important to consider buidling your website with a responsive layout where your website can adjust to different screen.</p>
+                <p>With a lot of users using the phone to browse the internet, it would be a good idea to implement media screen in the CSS when designing a website.</p>
+            </div>    
+        </section>
+    </div>
+<footer>
+    <p>For more information or help please use the in college resources for furthur help: <a href = "https://www.tudublin.ie/connect/staff-directory/">TU Dublin</a></p>
+</footer>    
+</body>
+</html>
